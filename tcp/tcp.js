@@ -7,4 +7,11 @@ const server = net.createServer(socket => {
     })
 })
 
-server.listen(8080)
+let port = 8080;
+server.listen(port)
+console.log(`Listten on ${port}`)
+
+/* 
+sample call:
+telnet localhost 8000
+*/
